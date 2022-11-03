@@ -55,6 +55,11 @@ h5 {
 
 a {
     text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
 
 }
 
@@ -62,6 +67,15 @@ a {
 ul {
     list-style-type: none;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+li {
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
 }
 
 .img {
@@ -161,6 +175,39 @@ start of Navbar
     display: none;
 }
 
+#hambargurMenu {
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+
+
+    transition-timing-function: linear;
+    transition: 0.5s;
+    overflow-y: auto;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+#hambargurMenu>ul>li {
+    border-top: 1px solid var(--green-color);
+}
+
+#hambargurMenu>ul>li:nth-last-child() {
+    /* padding-bottom: 10px; */
+    border-bottom: 1px solid var(--green-color);
+
+}
+
+#hambargurMenu>ul>li>a {
+    color: var(--gray-color);
+}
+
+.activeMenu {
+    height: auto !important;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
 /*
 ===========
 end of Navbar 
@@ -204,11 +251,6 @@ start of Header
 }
 
 .hero-right {
-    /* display: flex;
-    justify-content: center;
-    /* height: 100vh; */
-    /* align-items: center; */
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
 }
@@ -218,6 +260,7 @@ start of Header
 }
 
 @media only screen and (min-width: 320px) and (max-width:480px) {
+
     .menu-items {
         display: none;
     }
@@ -243,6 +286,9 @@ start of Header
 }
 
 @media only screen and (min-width: 481px) and (max-width:767px) {
+    .menu-items {
+        display: none;
+    }
 
     .hero-left h1 {
         font-size: 1.3rem;
@@ -264,6 +310,8 @@ start of Header
 }
 
 @media only screen and (min-width: 768px) and (max-width:1023px) {
+
+
     .hero-left h1 {
         font-size: 1.3rem;
     }
@@ -275,17 +323,29 @@ start of Header
     .menu-items>li {
         margin-right: 1rem;
     }
+
+    #hambargurMenu {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width:1200px) {
     .container {
         /* padding: 0; */
     }
+
+    #hambargurMenu {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     .container {
         padding: 0;
+    }
+
+    #hambargurMenu {
+        display: none;
     }
 }
 
@@ -525,6 +585,7 @@ start of team
 .single-team-info {
     background-color: #fff;
     box-shadow: var(--shadow-4);
+    border-radius: 10px;
     /* border: 1px solid red; */
     padding: 8px;
     width: 9rem;
@@ -608,4 +669,183 @@ start of team
         right: 3rem;
         width: 7rem;
     }
+}
+
+
+/*
+===========
+end of team 
+==========
+ */
+
+/*
+===========
+start of review 
+==========
+ */
+
+.review {
+    margin-top: 4rem;
+}
+
+.client-container {
+    display: flex;
+
+
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.single-client-review {
+    /* max-width: 40vw; */
+    width: 40vw;
+    margin: 0 auto;
+    box-shadow: var(--shadow-4);
+    padding: 10px;
+    position: relative;
+    margin-top: 2rem;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.star {
+    display: flex;
+    white-space: 2px;
+}
+
+.start i {
+    color: rgb(218, 180, 78);
+    width: 10px;
+
+}
+
+.single-client-review>img {
+    border: 2px solid var(--green-color);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    /* margin-bottom: 5rem; */
+    left: 50%;
+}
+
+.single-client-review h4 {
+    margin-top: 5rem;
+    /* text-align: center; */
+    font-weight: var(--font-wight-600);
+    color: var(--gray-700);
+}
+
+.review-right-side img {
+    width: 500px;
+    height: 300px;
+}
+
+@media only screen and (min-width: 320px) and (max-width:480px) {
+
+    .client-container {
+        display: block;
+    }
+
+    .single-client-review {
+
+        width: 90vw;
+    }
+
+    .review-right-side img {
+        width: 270px;
+        height: 210px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width:767px) {
+    .client-container {
+        display: block;
+    }
+
+    .single-client-review {
+        /* max-width: 40vw; */
+        width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    .single-client-review>img {
+        /* margin: 0 auto; */
+        margin-left: 6rem;
+    }
+
+    .client-container {
+        display: block;
+    }
+
+    .single-client-review {
+
+        width: 70vw;
+    }
+}
+
+/*
+===========
+end of review 
+==========
+ */
+
+/*
+===========
+start of faq 
+==========
+ */
+.faq {
+    margin-top: 4rem;
+}
+
+.accordian {
+    max-width: 40vw;
+    margin-top: 3rem;
+}
+
+.accordian .contentBox {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.accordian .contentBox .label {
+    position: relative;
+    padding: 10px;
+    background-color: #2694af;
+    color: white;
+    cursor: pointer;
+}
+
+.accordian .contentBox .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordian .contentBox.active .label::before {
+    content: '-';
+}
+
+.accordian .contentBox .content {
+    position: relative;
+    background-color: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.accordian .contentBox.active .content {
+    height: 100px;
+    padding: 10px;
+}
+
+.accordian .contentBox.inactive .content {
+    height: 0;
 }

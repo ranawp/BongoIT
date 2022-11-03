@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bongo IT</title>
+
+    <!-- fontawesome cdn link -->
+    <script src="https://kit.fontawesome.com/369eb6be78.js" crossorigin="anonymous"></script>
+
+    <!-- stylesheet link -->
     <link rel="stylesheet" href="./CSS/main.css">
 </head>
 
@@ -26,14 +31,26 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
                 <div class="moblie-menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor">
+                    <svg id="menuBtn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
                         <path stroke-linecap=" round" stroke-linejoin="round"
                             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
 
                 </div>
+
             </div>
+
+        </div>
+        <div id=hambargurMenu>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Connection</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
         </div>
     </nav>
     <!-- end of nav -->
@@ -184,7 +201,66 @@
                 </div>
             </div>
         </div>
+        <!-- end of our team -->
+
+        <!-- start of client review -->
+        <div class="review">
+            <h2 class="title">Client Review</h2>
+            <div class="client-container">
+                <div class="review-right-side">
+                    <img src="./assets/images/happy-customer.jpg" alt="happy-client-image">
+                </div>
+                <div class="single-client-review">
+                    <img src="./assets/images/team-members/team7.jpg" alt="">
+                    <h4>Client Name</h4>
+                    <small>Company Name</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ratione?</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa-solid fa-star-sharp"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of review -->
+        <!-- freequently as qestion -->
+        <div class="faq">
+            <h3 class="title">Frequently as question</h3>
+            <div class="accordian">
+                <div class="contentBox">
+                    <div class="label">List One</div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, atque?</p>
+                    </div>
+                </div>
+                <div class="contentBox">
+                    <div class="label">List two</div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, atque?</p>
+                    </div>
+                </div>
+                <div class="contentBox">
+                    <div class="label">List three</div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, atque?</p>
+                    </div>
+                </div>
+                <div class="contentBox">
+                    <div class="label">List four</div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, atque?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
