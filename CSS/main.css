@@ -754,8 +754,9 @@ start of review
     }
 
     .review-right-side img {
-        width: 270px;
+        width: 280px;
         height: 210px;
+        margin-left: auto;
     }
 }
 
@@ -784,6 +785,15 @@ start of review
 
         width: 70vw;
     }
+
+    .single-client-review>img {
+
+        left: 30%;
+    }
+
+    .review-right-side img {
+        margin-left: 6rem;
+    }
 }
 
 /*
@@ -803,7 +813,7 @@ start of faq
 
 .accordian {
     max-width: 40vw;
-    margin-top: 3rem;
+    margin: auto 0;
 }
 
 .accordian .contentBox {
@@ -848,4 +858,78 @@ start of faq
 
 .accordian .contentBox.inactive .content {
     height: 0;
+}
+
+.accordian-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.question-image>img {
+    width: 80%;
+    border-radius: 12px;
+    /* position: absolute; */
+
+}
+
+@media only screen and (min-width: 320px) and (max-width:480px) {
+    .accordian-container {
+        display: block;
+    }
+
+    .accordian {
+        max-width: 90vw;
+    }
+
+    .question-image>img {
+        margin-left: 1rem;
+    }
+}
+
+
+/*
+===========
+start of footer 
+==========
+ */
+.footer {
+    background-color: #f0eaea;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 1rem;
+    gap: 15px;
+}
+
+.footer-container>div>h4 {
+    color: var(--gray-700);
+    font-weight: var(--font-wight-600);
+    font-size: 1.1rem;
+}
+
+.footer-container a {
+    font-size: 17px;
+    color: var(--gray-400);
+}
+
+.company-story {
+    font-size: .8rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width:480px) {
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width:768px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 }
