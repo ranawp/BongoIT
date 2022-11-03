@@ -13,6 +13,7 @@
     --green-color: #00B140;
     --gray-700: #5A5A5A;
     --gray-400: #707372;
+    --gray-300: #9b9595;
     --grey-50: #f8fafc;
     --font-wight-600: 600;
     --font-wight-700: 700;
@@ -22,6 +23,8 @@
     --letterSpacing: 1px;
     --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
         0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
 
     --headingFont: 'Roboto', sans-serif;
     --bodyFont: 'Nunito', sans-serif;
@@ -91,7 +94,23 @@ ul {
     font-weight: var(--font-wight-700);
     text-align: center;
     margin-top: 1rem;
+    position: relative;
+    /* width: 12rem; */
+
 }
+
+.title::after {
+    position: absolute;
+    content: ' ';
+    width: 8%;
+    height: 4px;
+    left: 50%;
+    bottom: -5px;
+    background-color: var(--gray-400);
+    transform: translate(-50%);
+}
+
+
 
 /*
 ===========
@@ -301,3 +320,212 @@ start of clients
 end of clients 
 ==========
  */
+
+
+/*
+===========
+start of service 
+==========
+ */
+.services {
+    margin-top: 3rem;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+    gap: 10px;
+}
+
+.service-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.service-images img {
+    width: 160px;
+    box-shadow: var(--shadow-3);
+    padding: 1rem;
+    height: 150px;
+    margin-top: 1rem;
+}
+
+
+.service-right {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 2px;
+
+}
+
+.scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.timeline {
+    position: relative;
+    margin-left: 2rem;
+}
+
+
+.timeline-container {
+    margin: 10px 0;
+    position: relative;
+    width: 90%;
+    box-shadow: var(--shadow-3);
+}
+
+.bollet {
+    width: 30px;
+    height: 30px;
+    color: #00B140;
+}
+
+
+
+.timeline-container::before {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    content: '';
+    left: 0;
+    top: 0;
+    margin-left: -30px;
+    border-radius: 50%;
+    background-color: var(--gray-400);
+    z-index: 22222;
+}
+
+.text-box {
+    padding: 20px 30px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.timeline::before {
+    content: ' ';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: var(--gray-400);
+    top: 0;
+    left: 0;
+    margin-left: -20px;
+    z-index: 99999;
+}
+
+@media only screen and (min-width: 320px) and (max-width:480px) {
+
+    .service-container {
+        display: block;
+        margin-top: 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width:767px) {
+    .service-container {
+        display: block;
+    }
+
+    .service-right {
+        margin-top: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {}
+
+@media only screen and (min-width: 1024px) and (max-width:1200px) {}
+
+@media only screen and (min-width: 1200px) {}
+
+/*
+===========
+end of service 
+==========
+ */
+
+/*
+===========
+start of team 
+==========
+ */
+.team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 7rem;
+}
+
+.team-info h3 {
+    font-size: 2rem;
+    font-weight: var(--font-wight-700);
+    color: var(--gray-700);
+}
+
+.team-info h4 {
+    font-size: .9rem;
+    font-weight: var(--font-wight-600);
+    color: #9b9595
+}
+
+.team-info p {
+    font-size: .8rem;
+    font-weight: var(--font-wight-600);
+    color: #9b9595;
+    margin-top: .5rem
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.single-team-member {
+    position: relative;
+}
+
+.single-team-member>img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.team-info>a {
+    color: var(--green-color);
+    font-size: .9rem;
+    font-weight: var(--font-wight-600);
+}
+
+.single-team-info {
+    background-color: #fff;
+    box-shadow: var(--shadow-4);
+    border: 1px solid red;
+    padding: 8px;
+    width: 9rem;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+}
+
+.single-team-info h4 {
+    color: var(--green-color);
+    font-weight: var(--font-wight-600);
+    font-size: .8rem;
+}
+
+.single-team-info p {
+    font-size: .7rem;
+}
