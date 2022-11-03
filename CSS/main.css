@@ -433,6 +433,14 @@ start of service
         margin-top: 1.5rem;
     }
 
+    .service-images img {
+        width: 130px;
+    }
+
+    .service-right {
+        margin-top: 1.5rem;
+    }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width:767px) {
@@ -466,6 +474,7 @@ start of team
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 7rem;
+
 }
 
 .team-info h3 {
@@ -503,6 +512,10 @@ start of team
     border-radius: 50%;
 }
 
+.team-info {
+    margin: auto 0;
+}
+
 .team-info>a {
     color: var(--green-color);
     font-size: .9rem;
@@ -512,12 +525,12 @@ start of team
 .single-team-info {
     background-color: #fff;
     box-shadow: var(--shadow-4);
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 8px;
     width: 9rem;
     position: absolute;
-    top: 5rem;
-    right: 0;
+    top: 6rem;
+    right: -.2rem;
 }
 
 .single-team-info h4 {
@@ -528,4 +541,71 @@ start of team
 
 .single-team-info p {
     font-size: .7rem;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width:480px) {
+
+    .team {
+        display: block;
+
+    }
+
+    .team-members {
+        margin-top: 2rem;
+        padding-right: 15px;
+    }
+
+    .team-info h3 {
+        font-size: 1.5rem;
+    }
+
+
+    .single-team-member>img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+    }
+
+    .single-team-info {
+
+        position: absolute;
+        top: 5rem;
+        /* right: -.2rem; */
+        width: 7rem;
+    }
+
+    .single-team-member {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width:767px) {
+    .team {
+        display: block;
+        /* margin-top: 1rem; */
+    }
+
+    .team-members {
+        margin-top: 2rem;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    .team {
+        display: block;
+    }
+
+    .team-members {
+        margin-top: 2rem;
+    }
+
+    .single-team-info {
+
+        position: absolute;
+        top: 6rem;
+        right: 3rem;
+        width: 7rem;
+    }
 }
