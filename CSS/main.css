@@ -178,9 +178,11 @@ start of Navbar
     transition: var(--transition);
 }
 
-.logo a {
+.logo a,
+.logo {
     font-weight: 700;
     font-size: 1.5rem;
+    color: var(--gray-700);
 }
 
 .moblie-menu {
@@ -221,7 +223,6 @@ start of Navbar
     overflow-y: auto;
 }
 
-
 /*
 ===========
 end of Navbar 
@@ -234,7 +235,7 @@ start of Header
 ==========
  */
 .header {
-    min-height: 100vh;
+    min-height: 85vh;
     /* border: 1px solid red; */
 
 }
@@ -242,6 +243,7 @@ start of Header
 .hero-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* align-items: center; */
 }
 
 .hero-left {
@@ -271,6 +273,15 @@ start of Header
 
 .hero-right img {
     margin-top: 4rem;
+}
+
+.img-hover-effect {
+    transition-duration: .4s;
+}
+
+.img-hover-effect:hover {
+    transform: scale(1.1);
+    transition-duration: .4s;
 }
 
 @media only screen and (min-width: 320px) and (max-width:480px) {
@@ -344,10 +355,6 @@ start of Header
 }
 
 @media only screen and (min-width: 1024px) and (max-width:1200px) {
-    .container {
-        /* padding: 0; */
-    }
-
     #hambargurMenu {
         display: none;
     }
@@ -431,6 +438,15 @@ start of service
     overflow-y: scroll;
 }
 
+.text-box>h2 {
+    font-weight: 500;
+    color: var(--gray-color)
+}
+
+.text-box>p {
+    color: var(--gray-400);
+}
+
 .scroll::-webkit-scrollbar {
     width: 2px;
 
@@ -469,12 +485,12 @@ start of service
 
 .timeline-container::before {
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
     content: '';
     left: 0;
     top: 0;
-    margin-left: -30px;
+    margin-left: -27px;
     border-radius: 50%;
     background-color: var(--gray-400);
     z-index: 22222;
@@ -491,7 +507,7 @@ start of service
 .timeline::before {
     content: ' ';
     position: absolute;
-    width: 6px;
+    width: 4px;
     height: 100%;
     background-color: var(--gray-400);
     top: 0;
@@ -531,7 +547,11 @@ start of service
 
 @media only screen and (min-width: 1024px) and (max-width:1200px) {}
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .container {
+        padding: 0 10px;
+    }
+}
 
 /*
 ===========
@@ -549,6 +569,10 @@ start of team
     grid-template-columns: 1fr 1fr;
     margin-top: 7rem;
 
+}
+
+.team-info {
+    padding-right: 1.6rem;
 }
 
 .team-info h3 {
@@ -704,21 +728,36 @@ start of review
 
 .client-container {
     display: flex;
-
-
     margin-top: 3rem;
     align-items: center;
 }
 
+.review-right-side img {
+    border-radius: 10px;
+}
+
+.swiper {
+    /* width: 600px; */
+    height: 300px;
+}
+
+.slider img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+}
+
 .single-client-review {
-    /* max-width: 40vw; */
-    width: 40vw;
+    max-width: 40vw;
+
     margin: 0 auto;
     box-shadow: var(--shadow-4);
     padding: 10px;
     position: relative;
     margin-top: 2rem;
     text-align: center;
+
+
     /* border: 1px solid red; */
 }
 
@@ -763,7 +802,7 @@ start of review
     }
 
     .single-client-review {
-        width: 90vw;
+        width: 300px;
     }
 
     .review-right-side img {
@@ -785,9 +824,10 @@ start of review
 }
 
 @media only screen and (min-width: 768px) and (max-width:1023px) {
+
     .single-client-review>img {
-        /* margin: 0 auto; */
-        margin-left: 6rem;
+
+        left: 50%;
     }
 
     .client-container {
@@ -799,10 +839,7 @@ start of review
         width: 70vw;
     }
 
-    .single-client-review>img {
 
-        left: 30%;
-    }
 
     .review-right-side img {
         margin-left: 6rem;
@@ -837,7 +874,7 @@ start of faq
 .accordian .contentBox .label {
     position: relative;
     padding: 10px;
-    background-color: #2694af;
+    background-color: var(--gray-400);
     color: white;
     cursor: pointer;
 }
@@ -931,8 +968,14 @@ start of footer
     color: var(--gray-400);
 }
 
+.social-links a {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
 .company-story {
     font-size: .8rem;
+    font-weight: var(--font-wight-700);
 }
 
 @media only screen and (min-width: 320px) and (max-width:480px) {
