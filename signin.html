@@ -13,7 +13,7 @@
     <!-- stylesheet link -->
     <link rel="stylesheet" href="./CSS/main.css">
     <link rel="stylesheet" href="./CSS/contact.css">
-
+    <link rel="stylesheet" href="./CSS/login.css">
     <!-- <link rel="stylesheet" href="./CSS/services.css">
     <link rel="stylesheet" href="./CSS/contact.css"> -->
 </head>
@@ -32,9 +32,7 @@
                     <!-- <li><a href="#">Connection</a></li> -->
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="signin.html">Sign In</a></li>
-                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
                 <div class="moblie-menu">
                     <svg id="menuBtn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -55,32 +53,35 @@
                 <li><a href="portfolio.html">Our Portfolio</a></li>
                 <!-- <li><a href="#">Connection</a></li> -->
                 <li><a href="about.html">About Us</a></li>
-                <!-- <li><a href="#">Blog</a></li> -->
+                <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact Us</a></li>
-                <li><a href="signin.html">Sign In</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
             </ul>
         </div>
     </nav>
     <!-- end of nav -->
     <main class="container">
-        <h2 class="title">Stay Connect with us</h2>
+        <h2 class="title">Sign In</h2>
         <div class="contact">
 
-            <div class="contact-img">
-                <img src="./assets/images/customer-care.jpg" alt="customer-care">
-            </div>
+
             <div>
                 <form class="contact-form">
                     <label for="name">Your Name</label> <br>
                     <input placeholder="name" type="text" name="name" id="name"> <br>
+
                     <label for="name">Your Email</label> <br>
                     <input placeholder="email" type="email" name="email" id="email"> <br>
-                    <label for="name">Massage</label> <br>
-                    <textarea placeholder="leave your massage here" name="" id=""></textarea>
-                    <br>
+
+                    <label for="name">Your Password</label> <br>
+                    <input placeholder="Password" type="password" name="password" id="password"> <br>
+
                     <button class="primary-button">Submit</button>
+                    <p class="signin">Log in Don't have an account? <a class="signin" href="signup.html"> Sign Up
+                        </a> </p>
                 </form>
+            </div>
+            <div class="contact-img">
+                <img src="./assets/images/signin.jpg" alt="customer-care">
             </div>
 
         </div>

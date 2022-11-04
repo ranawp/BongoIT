@@ -49,7 +49,8 @@
 
 .contact-form>input#name,
 .contact-form>input#email,
-.contact-form>textarea {
+.contact-form>textarea,
+.contact-form>input#password {
     font-size: .8rem;
     padding: 5px 6px;
     padding-left: 6px;
