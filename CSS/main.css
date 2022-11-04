@@ -38,6 +38,7 @@ body {
     font-family: var(--bodyFont);
     font-weight: 400;
     line-height: 1.75;
+
     /* color: var(--textColor); */
 }
 
@@ -90,6 +91,7 @@ li {
     /* border: 1px solid red; */
     margin: auto;
     padding: 0 1rem;
+
 }
 
 .primary-button {
@@ -124,6 +126,9 @@ li {
     transform: translate(-50%);
 }
 
+.page {
+    min-height: 100vh;
+}
 
 
 /*
@@ -133,8 +138,15 @@ start of Navbar
  */
 
 .nav {
-
+    background-color: white;
     box-shadow: var(--shadow-3);
+
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
 }
 
 .nav-bar,
@@ -207,6 +219,7 @@ start of Navbar
     transition: 0.5s;
     overflow-y: auto;
 }
+
 
 /*
 ===========
@@ -749,7 +762,6 @@ start of review
     }
 
     .single-client-review {
-
         width: 90vw;
     }
 

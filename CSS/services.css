@@ -1,0 +1,22 @@
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+}
+
+.section-grid>div>h2 {
+    color: var(--gray-700);
+    font-weight: var(--font-wight-600);
+}
+
+.section-grid>div>p,
+.section-grid>div>ul>li {
+    color: var(--gray-700);
+}
+
+.service-images {
+    width: 300px;
+    height: 300px;
+    margin-left: 4rem;
+
+}
