@@ -88,7 +88,7 @@ li {
 
 .container {
     /* width: var(--max-width); */
-    max-width: 1250px;
+    max-width: 1450px;
     /* border: 1px solid red; */
     margin: auto;
     padding: 0 1rem;
@@ -299,7 +299,7 @@ start of Header
 
 }
 
-@media only screen and (min-width: 481px) and (max-width:767px) {
+@media only screen and (min-width: 481px) and (max-width:768px) {
     .menu-items {
         display: none;
     }
@@ -323,7 +323,7 @@ start of Header
 
 }
 
-@media only screen and (min-width: 768px) and (max-width:1023px) {
+@media only screen and (min-width: 769px) and (max-width:1023px) {
 
 
     .hero-left h1 {
@@ -910,12 +910,13 @@ start of footer
 .footer {
     background-color: #f0eaea;
     margin-top: 2rem;
+    padding: 3rem 0;
 }
 
 .footer-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding-top: 1rem;
+    /* padding: 3rem 0; */
     gap: 15px;
 }
 

@@ -1,0 +1,119 @@
+.portfolios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+    gap: 2rem 0rem;
+    margin-bottom: 7rem;
+    place-items: center;
+}
+
+.portfolio h1 {
+    margin-top: 4rem;
+}
+
+.single-portofolio {
+    width: 400px;
+    position: relative;
+    box-shadow: var(--shadow-4);
+}
+
+
+.portflio-info h4 {
+    font-size: 1.5rem;
+    font-weight: var(--font-wight-600);
+    color: var(--gray-700);
+}
+
+.single-portofolio img {
+    width: 100%;
+    display: block;
+}
+
+.portflio-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 100%;
+    width: 100%;
+    height: 100%;
+    animation-duration: 2s;
+    animation-name: slide;
+    background-color: rgba(0, 0, 0, 0.459);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+
+.portflio-info>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.portflio-info:hover {
+    opacity: 1;
+}
+
+.portflio-info:hover>* {
+    transform: translateY(0);
+}
+
+.blur {
+    backdrop-filter: blur(1px);
+}
+
+.portflio-info h4 {
+    color: white;
+}
+
+.fa-eye,
+.fa-code-branch {
+    color: white;
+    margin-left: 7px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width:480px) {
+    .portfolios {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .single-portofolio {
+        width: 280px;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width:767px) {
+    .portfolios {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .single-portofolio {
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+    .portfolios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .single-portofolio {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width:1300px) {
+    .portfolios {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem 0;
+
+    }
+
+}
