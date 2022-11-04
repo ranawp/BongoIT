@@ -103,6 +103,7 @@ li {
     border-radius: .3rem;
     font-weight: 600;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .title {
@@ -410,6 +411,8 @@ start of service
  */
 .services {
     margin-top: 3rem;
+    background-color: #fdfbfb;
+    padding: 25px 0 3rem;
 }
 
 .service-container {
@@ -417,6 +420,7 @@ start of service
     grid-template-columns: 1fr 1fr;
     margin-top: 3rem;
     gap: 10px;
+
 }
 
 .service-images {
@@ -732,12 +736,17 @@ start of review
     align-items: center;
 }
 
+.review-right-side {
+    display: flex;
+    justify-content: center;
+}
+
 .review-right-side img {
     border-radius: 10px;
 }
 
 .swiper {
-    /* width: 600px; */
+    width: 600px;
     height: 300px;
 }
 
@@ -748,17 +757,21 @@ start of review
 }
 
 .single-client-review {
-    max-width: 40vw;
-
+    width: 500px;
+    height: 300px;
     margin: 0 auto;
-    box-shadow: var(--shadow-4);
+
     padding: 10px;
     position: relative;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     text-align: center;
-
-
     /* border: 1px solid red; */
+}
+
+.client-box {
+    box-shadow: var(--shadow-4);
+    border-radius: 10px;
+    margin-top: 1rem;
 }
 
 .star {
@@ -810,6 +823,11 @@ start of review
         height: 210px;
         margin-left: auto;
     }
+
+    .swiper {
+        width: 290px;
+        height: 350px;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width:767px) {
@@ -838,8 +856,6 @@ start of review
 
         width: 70vw;
     }
-
-
 
     .review-right-side img {
         margin-left: 6rem;
@@ -938,6 +954,30 @@ start of faq
     }
 }
 
+.to-top {
+    background-color: red;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: blue;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
 
 /*
 ===========

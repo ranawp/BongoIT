@@ -20,22 +20,32 @@ for (i = 0; i < accordian.length; i++) {
 const icon = document.getElementsByClassName('portfolio-info');
 
 //slider
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
 
-//     loop: true,
+    loop: true,
 
-//     // If we need pagination
-//     pagination: {
-//         el: '.swiper-pagination',
-//     },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
 
-//     // Navigation arrows
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 
-//     // And if we need scrollbar
+    // And if we need scrollbar
 
-// });
+});
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+})

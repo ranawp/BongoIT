@@ -15,17 +15,17 @@
     <!-- <link rel="stylesheet" href="./CSS/services.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+
 </head>
 
 <body>
     <nav class="nav sticky">
         <div class="nav-bar container">
             <div class="logo">
-                <a href="">Bongo IT</a>
+                <a href="index.html">Bongo IT</a>
             </div>
             <div class="">
                 <ul class="menu-items">
-
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Our Portfolio</a></li>
@@ -79,9 +79,9 @@
             </div>
         </div>
     </header>
-    <main class="container page">
+    <main class=" page">
         <!-- clients  -->
-        <div class="clients">
+        <div class="clients container">
             <h2 class="title">Our Clients</h2>
             <div class="clients-logo">
                 <img class="img-hover-effect" src="./assets/images/ajkerdeal.png" alt="ajkerdeal-logo">
@@ -95,7 +95,7 @@
         <!-- services -->
         <div class="services">
             <h2 class="title">Services</h2>
-            <div class="service-container">
+            <div class="service-container container">
                 <div class="service-left">
                     <div class="service-images">
                         <img class="img-hover-effect" src="./assets/images/e-commerce.png" alt="">
@@ -162,7 +162,7 @@
         <!-- end of services -->
 
         <!-- start of our team  -->
-        <div class="team">
+        <div class="team container">
             <div class="team-info">
                 <h3>Meet Our software expert developer team</h3>
                 <h4>Our team memeber are fully supportive for give you best quality supprot. Expert team are experienced
@@ -218,32 +218,75 @@
         <!-- end of our team -->
 
         <!-- start of client review -->
-        <div class="review">
+        <div class="review container">
             <h2 class="title">Client Review</h2>
             <div class="client-container">
                 <div class="review-right-side">
                     <img class="img-hover-effect" src="./assets/images/happy-customer.jpg" alt="happy-client-image">
                 </div>
-                <div class="single-client-review">
-                    <div class="single-client-review">
-                        <img src="./assets/images/team-members/team6.png" alt="">
-                        <h4>Ms. Shemme</h4>
-                        <small>Daraza Limited</small>
-                        <p>We are satisfied to get their service. They provide world class service. We
-                            recomeded for thier
-                            good services.</p>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="single-client-review client-box">
+                                <div class="single-client-review ">
+                                    <img src="./assets/images/team-members/team6.png" alt="">
+                                    <h4>Ms. Shemme</h4>
+                                    <small>Daraza Limited</small>
+                                    <p>We are satisfied to get their service. They provide world class service.</p>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-client-review client-box">
+                                <div class="single-client-review ">
+                                    <img src="./assets/images/team-members/team6.png" alt="">
+                                    <h4>Ms. Shemme</h4>
+                                    <small>Daraza Limited</small>
+                                    <p>We are satisfied to get their service. They provide world class service.</p>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-client-review client-box">
+                                <div class="single-client-review ">
+                                    <img src="./assets/images/team-members/team6.png" alt="">
+                                    <h4>Ms. Shemme</h4>
+                                    <small>Daraza Limited</small>
+                                    <p>We are satisfied to get their service. They provide world class service. </p>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
                     </div>
+                    <!-- If we need pagination -->
 
 
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
 
                 </div>
+
 
             </div>
         </div>
         <!-- end of review -->
 
         <!--Start freequently as qestion -->
-        <div class="faq">
+        <div class="faq container">
             <h3 class="title">Frequently ask question</h3>
             <div class="accordian-container">
                 <div class="accordian">
@@ -293,6 +336,9 @@
                 </div>
             </div>
         </div>
+        <!-- <div class="click-top">
+            <i class="to-top" class="fa-solid fa-arrow-up"></i>
+        </div> -->
         <!--end freequently as qestion -->
 
 
